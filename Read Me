@@ -1,0 +1,50 @@
+
+# Advanced Text Summarization with Fine-Tuned T5 Models
+
+This project focuses on developing and evaluating advanced text summarization models using the CNN / DailyMail dataset. 
+The primary objective is to explore different T5 model architectures and their performance in generating concise 
+and coherent summaries of news articles.
+
+## Overview
+
+The project involves three main approaches:
+
+1. Pre-built T5 Summarizer: Utilizes the pre-trained T5 model from the Hugging Face library to generate summaries and evaluate performance with BLEU scores.
+
+2. Custom T5 Architecture: Constructs and trains a custom T5 model on a subset of the dataset, comparing its performance with other models.
+
+3. Simpler T5 Model: Builds a simpler T5 model from scratch, evaluating its effectiveness in summarization tasks.
+
+## Methodology
+
+The dataset used, CNN / DailyMail, includes over 300,000 news articles, providing a robust foundation for training 
+and evaluating summarization models. Data preprocessing involves cleaning, tokenization, and vectorization, 
+while evaluation is based on BLEU scores to measure the quality of generated summaries.
+
+## Results
+
+- Pre-built T5 Summarizer: BLEU score of 8.32719
+- Custom T5 Architecture: BLEU score of 7.63029
+- Simpler T5 Model: BLEU score of 7.89182
+
+Additional evaluation with a different dataset showed improved BLEU scores, highlighting the influence of dataset characteristics on model performance.
+
+## Challenges
+
+Key challenges included handling the large CNN dataset, computational constraints during hyperparameter tuning, 
+and kernel crashes. These issues underscored the need for more efficient processing strategies and model optimization.
+
+## Future Work
+
+Future directions include exploring distributed computing for handling large datasets, refining hyperparameter tuning processes,
+and evaluating models with alternative metrics such as ROUGE and METEOR. Investigating domain-specific datasets 
+and advanced pre-training techniques will further enhance model adaptability and performance.
+
+## References
+
+- See, A. (2023). [CNN / DailyMail Dataset](https://github.com/abisee/cnn-dailymail)
+- Question Answering Corpus. (2023). [GitHub Repository](https://github.com/deepmind/rc-data)
+- t5-base · Hugging Face. (2022). [Model Information](https://huggingface.co/t5-base)
+- Roy, S. (n.d.). [simpleT5 on PyPI](https://pypi.org/project/simplet5/)
+- Brownlee, J. (2017). [Calculating the BLEU Score](https://machinelearningmastery.com/calculate-bleu-score-for-text/)
+
